@@ -16,15 +16,26 @@ class MyApp extends StatelessWidget {
           child: Container(
             height: 300,
             width: 300,
-            color: Colors.deepPurple,
+            decoration: BoxDecoration(
+              color: Colors.deepPurple,
+              borderRadius: BorderRadius.circular(20),
+            ),
             padding: EdgeInsets.symmetric(horizontal: 25, vertical: 25),
+            /*
             child: Text(
               "Ness",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
-              )
+              ) //TextStyle
+            ),  //Text
+
+             */ //Text
+            child: Icon(
+              Icons.favorite,
+              color: Colors.white,
+              size: 64,
             ),
           ),
         ),
