@@ -29,13 +29,13 @@ class MyApp extends StatelessWidget {
 
          */ //AppBar
         body: Column(   //Column Widget
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly, //start, center, end, spaceEvenly
-
+          //mainAxisAlignment: MainAxisAlignment.spaceEvenly, //start, center, end, spaceEvenly
+          crossAxisAlignment: CrossAxisAlignment.end, //start, center, end
           children: [ //to make a column it requires children of widgets
             //1st box
             Container(
-              height: 200,
-              width: 200,
+              height: 300,
+              width: 300,
               color: Colors.deepPurple[600],
             ),
 
@@ -48,8 +48,8 @@ class MyApp extends StatelessWidget {
 
             //3rd box
             Container(
-              height: 200,
-              width: 200,
+              height: 100,
+              width: 100,
               color: Colors.deepPurple[200],
             ),
 
