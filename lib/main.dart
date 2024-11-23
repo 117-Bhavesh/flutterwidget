@@ -11,7 +11,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.pink[300],
+        // backgroundColor: Colors.grey,
+        /*
         appBar: AppBar(
           title: Text(
             "My App Bar",
@@ -20,11 +21,41 @@ class MyApp extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          backgroundColor: Colors.deepPurple,
+          backgroundColor: Colors.purple,
           elevation: 0, //to control the shadow  below the appbar
           leading: Icon(Icons.menu), //to put icon on the left hand side
           actions: [IconButton(onPressed: () {}, icon: Icon(Icons.logout))], //to put an icon on the right hand side, it requires a list
         ),
+
+         */ //AppBar
+        body: Column(   //Column Widget
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly, //start, center, end, spaceEvenly
+
+          children: [ //to make a column it requires children of widgets
+            //1st box
+            Container(
+              height: 200,
+              width: 200,
+              color: Colors.deepPurple[600],
+            ),
+
+            //2nd box
+            Container(
+              height: 200,
+              width: 200,
+              color: Colors.deepPurple[400],
+            ),
+
+            //3rd box
+            Container(
+              height: 200,
+              width: 200,
+              color: Colors.deepPurple[200],
+            ),
+
+          ],
+        ),
+        /*
         body: Center(
           child: Container(
             height: 300,
@@ -55,6 +86,8 @@ class MyApp extends StatelessWidget {
              */ //Icon
           ),
         ),
+
+         */ //body: Center(child: Container())
       ),
     );
   }
