@@ -12,6 +12,33 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         // backgroundColor: Colors.grey,
+
+        body: ListView(         //makes the list scrollable
+          scrollDirection: Axis.horizontal,
+          children: [
+            //1st box
+            Container(
+              width: 350,
+              //height: 350,
+              color: Colors.deepPurple,
+            ),
+
+            //2nd box
+            Container(
+              width: 350,
+              //height: 350,
+              color: Colors.deepPurple[600],
+            ),
+
+            //3rd box
+            Container(
+              width: 350,
+              //height: 350,
+              color: Colors.deepPurple[200],
+            ),
+          ],
+        ),
+
         /*
         appBar: AppBar(
           title: Text(
@@ -28,10 +55,12 @@ class MyApp extends StatelessWidget {
         ),
 
          */ //AppBar
-        body: Column(   //Column Widget
+
+        /*
+        body: Column(             //Column Widget
           //mainAxisAlignment: MainAxisAlignment.spaceEvenly, //start, center, end, spaceEvenly
           //crossAxisAlignment: CrossAxisAlignment.end, //start, center, end
-          children: [ //to make a column it requires children of widgets
+          children: [             //to make a column it requires children of widgets
             //1st box
             Expanded(
               child: Container(
@@ -43,7 +72,7 @@ class MyApp extends StatelessWidget {
 
             //2nd box
             Expanded(
-              flex: 2,//sets the size according to the ratio compared to other widgets
+              flex: 2,            //sets the size according to the ratio compared to other widgets
               child: Container(
                 //height: 200,
                 //width: 200,
@@ -52,7 +81,7 @@ class MyApp extends StatelessWidget {
             ),
 
             //3rd box
-            Expanded(//just expands the widget to fill the rest of the space be it horizontally or vertically
+            Expanded(             //just expands the widget to fill the rest of the space be it horizontally or vertically
               child: Container(
                 //height: 200,
                 //width: 200,
@@ -62,6 +91,9 @@ class MyApp extends StatelessWidget {
 
           ],
         ),
+
+         */ //Column
+
         /*
         body: Center(
           child: Container(
@@ -95,6 +127,7 @@ class MyApp extends StatelessWidget {
         ),
 
          */ //body: Center(child: Container())
+
       ),
     );
   }
