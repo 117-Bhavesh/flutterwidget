@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
          */ //AppBar
         body: Column(   //Column Widget
           //mainAxisAlignment: MainAxisAlignment.spaceEvenly, //start, center, end, spaceEvenly
-          crossAxisAlignment: CrossAxisAlignment.end, //start, center, end
+          //crossAxisAlignment: CrossAxisAlignment.end, //start, center, end
           children: [ //to make a column it requires children of widgets
             //1st box
             Container(
