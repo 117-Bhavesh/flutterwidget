@@ -33,24 +33,30 @@ class MyApp extends StatelessWidget {
           //crossAxisAlignment: CrossAxisAlignment.end, //start, center, end
           children: [ //to make a column it requires children of widgets
             //1st box
-            Container(
-              height: 300,
-              width: 300,
-              color: Colors.deepPurple[600],
+            Expanded(
+              child: Container(
+                //height: 200,
+                //width: 200,
+                color: Colors.deepPurple[600],
+              ),
             ),
 
             //2nd box
-            Container(
-              height: 200,
-              width: 200,
-              color: Colors.deepPurple[400],
+            Expanded(
+              child: Container(
+                //height: 200,
+                //width: 200,
+                color: Colors.deepPurple[400],
+              ),
             ),
 
             //3rd box
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.deepPurple[200],
+            Expanded(//just expands the widget to fill the rest of the space be it horizontally or vertically
+              child: Container(
+                //height: 200,
+                //width: 200,
+                color: Colors.deepPurple[200],
+              ),
             ),
 
           ],
