@@ -43,6 +43,7 @@ class MyApp extends StatelessWidget {
 
             //2nd box
             Expanded(
+              flex: 2,//sets the size according to the ratio compared to other widgets
               child: Container(
                 //height: 200,
                 //width: 200,
