@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+
+  List names = ["Ness", "Faker", "Hoaqin"];
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +15,24 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         // backgroundColor: Colors.grey,
 
+        /*
+        body: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (context, index) => ListTile(
+            title: Text(index.toString()),
+          ),
+        ),
+
+         */
+
+        body: ListView.builder(
+          itemCount: names.length,
+          itemBuilder: (context, index) => ListTile(
+            title: Text(names[index]),
+          ),
+        ),
+
+        /*
         body: ListView(         //makes the list scrollable
           scrollDirection: Axis.horizontal,
           children: [
@@ -38,6 +58,8 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
+
+         */ //ListView
 
         /*
         appBar: AppBar(
