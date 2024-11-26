@@ -6,7 +6,7 @@ void main() {
 class MyApp extends StatelessWidget {
   MyApp({super.key});
 
-  List names = ["Ness", "Faker", "Hoaqin"];
+  //List names = ["Ness", "Faker", "Hoaqin"];
 
   @override
   Widget build(BuildContext context) {
@@ -14,6 +14,17 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         // backgroundColor: Colors.grey,
+        
+        body: GridView.builder(
+          itemCount: 64,
+          gridDelegate:
+              //it means how many you want in each row
+              SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 4),
+          itemBuilder: (Context, index) => Container(
+            color: Colors.deepPurple,
+            margin: EdgeInsets.all(2),
+          ),
+        ),
 
         /*
         body: ListView.builder(
@@ -23,14 +34,17 @@ class MyApp extends StatelessWidget {
           ),
         ),
 
-         */
+         */ //ListView.builder
 
+        /*
         body: ListView.builder(
           itemCount: names.length,
           itemBuilder: (context, index) => ListTile(
             title: Text(names[index]),
-          ),
-        ),
+          ),  //ListTitle
+        ),  //ListView.builder
+
+         */ //ListView.builder => ListTitle
 
         /*
         body: ListView(         //makes the list scrollable
