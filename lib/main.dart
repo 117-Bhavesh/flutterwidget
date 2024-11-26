@@ -1,25 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:flutterwidget/pages/first_page.dart';
 
 void main() {
   runApp(MyApp());
 }
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
   //List names = ["Ness", "Faker", "Hoaqin"];
 
   //functions and methods
-  void usertapped() {
-    print("User Tapped!");
-  }
+  //void usertapped() {
+  //  print("User Tapped!");
+  //}
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      home: FirstPage(),
+
+      /*
       home: Scaffold(
         // backgroundColor: Colors.grey,
 
+        /*
         //G E S T U R E D E T E C T O R-----------------------------------------
         body: Center(
           child: GestureDetector(
@@ -43,6 +48,7 @@ class MyApp extends StatelessWidget {
         ),
         //----------------------------------------------------------------------
 
+         */ //Gesture Detector
 
         /*
         body: Stack(
@@ -225,7 +231,9 @@ class MyApp extends StatelessWidget {
 
          */ //body: Center(child: Container())
 
-      ),
+      ),  //Scaffold
+
+       */ //old Scaffold
     );
   }
 }
