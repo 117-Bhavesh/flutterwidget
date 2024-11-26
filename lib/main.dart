@@ -14,7 +14,37 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         // backgroundColor: Colors.grey,
-        
+
+        /*
+        body: Stack(
+          alignment: Alignment.bottomRight,
+          children: [
+            //big box
+            Container(
+              height: 300,
+              width: 300,
+              color: Colors.grey,
+            ),
+
+            //medium box
+            Container(
+              height: 200,
+              width: 200,
+              color: Colors.pink,
+            ),
+
+            //small box
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.black,
+            ),
+          ],
+        ),    //Stack
+
+         */ //Stack
+
+        /*
         body: GridView.builder(
           itemCount: 64,
           gridDelegate:
@@ -23,8 +53,10 @@ class MyApp extends StatelessWidget {
           itemBuilder: (Context, index) => Container(
             color: Colors.deepPurple,
             margin: EdgeInsets.all(2),
-          ),
-        ),
+          ),  //Container
+        ),  //GridView.builder
+
+         */ //GridView.builder
 
         /*
         body: ListView.builder(
