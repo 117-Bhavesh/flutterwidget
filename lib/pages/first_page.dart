@@ -7,6 +7,8 @@ class FirstPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("FIRST PAGE")),
+      drawer: Drawer(),
+      /*
       body: Center(
         child: ElevatedButton(
           child: Text("GOT TO SECOND PAGE"),
@@ -29,6 +31,8 @@ class FirstPage extends StatelessWidget {
           },
         ),
       ),
+
+       */   //ElevatedButton
     );
   }
 }
