@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterwidget/pages/first_page.dart';
-import 'package:flutterwidget/pages/second_page.dart';
+import 'package:flutterwidget/pages/home_page.dart';
+import 'package:flutterwidget/pages/settings_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
       //routes for multiple pages can be set up
       routes: {
         '/firstpage': (context) => FirstPage(),
-        '/secondpage': (context) => SecondPage(),
+        '/homepage': (context) => HomePage(),
+        '/settingspage': (context) => SettingsPage(),
       },
 
       /*
